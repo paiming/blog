@@ -1,0 +1,67 @@
+<footer class="section white">
+	<div class="row">
+		<div class="copyrights large-12 columns" >平台郑重承诺：所有贷款申请在未成功放款前绝不收取任何费用，为保障您的资金安全，请不要相信任何要求您支付费用的信息、邮件、电话等不实信息。	</div>
+		<div class="large-12 columns">
+			<ul class="inline-list">
+			  <li class="copyright">Copyright &copy; 2019.chaona All rights reserved.</li>
+  			</ul>
+		</div>
+		<div class="large-12 columns" style="text-align: center;">
+			<span>贷款有风险 投资需谨慎!</span>
+		</div>
+	</div>
+</footer>		
+		
+	<div class="styleswitcher">
+		<h3>主题设置</h3>
+		<p>你不喜欢这个主题颜色吗？没关系，换个颜色试试！</p>
+		<h4>选择颜色</h4>
+		<span id="brown" class="switch-color"></span>
+		<span id="orange" class="switch-color"></span>
+		<span id="olive" class="switch-color"></span>
+		<span id="green" class="switch-color"></span>
+		<span id="lime" class="switch-color"></span>
+		<span id="cyan" class="switch-color"></span>
+		<span id="blue" class="switch-color"></span>
+		<span id="purple" class="switch-color"></span>
+		<span id="pink" class="switch-color"></span>
+		<span id="red" class="switch-color"></span>
+		<span id="winered" class="switch-color"></span>
+		<span id="black" class="switch-color"></span>
+		<span class="collapse"><span class="icon icon-cog"></span></span>
+	</div>
+  
+  <script src="js/zepto.js"></script>
+  <script src="js/foundation.min.js"></script>
+  
+  <script>
+  	  	$(document).ready(function() {
+
+		$('.price-table-toggle').click(function () {
+	
+			var thisparent = $(this).parents('.pricing-table');
+			$('.price-table-features', thisparent).fadeToggle('slow');
+			
+			if($(this).html()=='+ 贷款申请要求')
+				$(this).html('- 隐藏');	
+			else {	
+				$(this).html('+ 贷款申请要求');	
+			}
+		});
+		
+		/* Styleswitcher */
+		
+		$('.collapse').click(function () {
+			$('.styleswitcher').toggleClass('active'); 
+		});
+		
+		$('.switch-color').click(function () {
+			var color = $(this).attr('id');
+			$('body').removeClass().addClass(color);
+		});
+			
+	});
+    $(document).foundation();
+  </script>
+</body>
+</html>
