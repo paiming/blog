@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
-  <title>{{ page.title }}</title>
+  <title>我的Blog</title>
 
   <link rel="stylesheet" href="css/foundation.min.css">
   <link rel="stylesheet" href="css/style.css">
@@ -286,7 +286,19 @@
 <div id="blog" class="section blog white" data-magellan-destination="blog">
 	<div class="row">
 		<h2>新闻资讯</h2>
-		{{ content }} 
+		<!-- 对所有帖子进行一个遍历（输出内容使用两层大括号，单纯的命令使用一层大括号） -->
+
+<ul class="inline-list large-12 columns">
+	 
+
+	<li class="large-12">
+		<span class="left">2019-11-20</span> 
+		<a href="/blog/hello-world.html">Hello World</a>
+	</li>
+	
+
+</ul>
+ 
 		
 		<ul style="text-align: center;list-style-type:none;margin:0px;">		
 		  <li class="cta-button" ><a class="button radius" href="#">阅读更多</a></li>
